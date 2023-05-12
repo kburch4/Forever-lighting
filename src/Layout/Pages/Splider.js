@@ -2,7 +2,7 @@ import React from "react";
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/css';
 import accent from "../../Componets/light pictures/accent.JPG"
-import green from "../../Componets/light pictures/green.JPG"
+import red from "../../Componets/light pictures/red.JPG"
 import usa from "../../Componets/light pictures/usa.JPG"
 import easter from "../../Componets/light pictures/easter.JPG"
 import christmas from "../../Componets/light pictures/christmas.JPG"
@@ -27,7 +27,7 @@ export default function Splider() {
             <img src={accent} alt="Image 2" className="h-auto w-auto shadow-xl rounded-3xl"/>
           </SplideSlide>
           <SplideSlide>
-            <img src={green} alt="Image 2" className="h-auto w-auto shadow-xl rounded-3xl"/>
+            <img src={red} alt="Image 2" className="h-auto w-auto shadow-xl rounded-3xl"/>
           </SplideSlide>
           <SplideSlide>
             <img src={valentines} alt="Image 2" className="h-auto w-auto shadow-xl rounded-3xl"/>
