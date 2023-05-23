@@ -14,7 +14,7 @@ import Security from './Layout/Pages/Security';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-slate-900">
       <NavBar />
         <Routes>
           <Route path="/" element={<Home />}/>
