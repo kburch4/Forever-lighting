@@ -45,7 +45,7 @@ export default function Modal() {
                       </Dialog.Title>
                       <div className="mt-2">
                         <p className="text-sm text-gray-500">
-                          We have recieved your information, you will recieve confirmation with the next 24 hours.
+                          We have recieved your information, you will recieve confirmation within the next 24 hours.
                         </p>
                       </div>
                     </div>
