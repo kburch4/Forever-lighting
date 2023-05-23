@@ -98,7 +98,7 @@ const stats = [
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-sky-400 ring-1 bg-sky-400/10 ring-sky-400/10 hover:ring-sky-400/20 hover:bg-sky-400/20">
               Learn more about our LED Smart Lights {' '}
-              <a href="#" className="font-semibold text-sky-400">
+              <a href="/Accent" className="font-semibold text-sky-400">
                 <span className="absolute inset-0" aria-hidden="true" />
                 Read more <span aria-hidden="true">&rarr;</span>
               </a>
