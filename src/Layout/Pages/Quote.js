@@ -57,18 +57,18 @@ export default function Quote() {
   
   return (
     
-    <div className="isolate bg-white py-24 px-6 sm:py-32 lg:px-8">
+    <div className="isolate bg-slate-900 py-24 px-6 sm:py-32 lg:px-8">
       
       <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Request a Quote</h2>
-        <p className="mt-2 text-lg leading-8 text-gray-600">
+        <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Request a Quote</h2>
+        <p className="mt-2 text-lg leading-8 text-slate-400">
           We will come give you a free quote and demo so you know what you are buying. Fill out the form to set your appointment.
         </p>
       </div>
       <form action="#" ref={form} onSubmit={sendEmail} className="mx-auto mt-16 max-w-xl sm:mt-20">
         <div className="grid grid-cols-1 gap-y-6 gap-x-8 sm:grid-cols-2">
           <div>
-            <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-white">
               First name
             </label>
             <div className="mt-2.5">
@@ -78,12 +78,12 @@ export default function Quote() {
                 id="first-name"
                 required
                 autoComplete="given-name"
-                className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6"
+                className="block w-full rounded-md bg-slate-900 border-0 py-2 px-3.5 text-slate-400 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-400 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
           <div>
-            <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-white">
               Last name
             </label>
             <div className="mt-2.5">
@@ -93,13 +93,13 @@ export default function Quote() {
                 id="last-name"
                 required
                 autoComplete="family-name"
-                className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6"
+                className="block w-full rounded-md border-0 py-2 px-3.5 bg-slate-900 text-slate-400 shadow-sm ring-1 ring-inset ring-gray-400 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-400 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
           
           <div className="sm:col-span-2">
-            <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label htmlFor="email" className="block text-sm font-semibold leading-6 text-white">
               Email
             </label>
             <div className="mt-2.5">
@@ -109,12 +109,12 @@ export default function Quote() {
                 id="email"
                 required
                 autoComplete="email"
-                className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6"
+                className="block w-full rounded-md bg-slate-900 border-0 py-2 px-3.5 text-slate-400 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-400 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
           <div className="sm:col-span-2">
-            <label htmlFor="phone-number" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label htmlFor="phone-number" className="block text-sm font-semibold leading-6 text-white">
               Phone number
             </label>
             <div className="relative mt-2.5">
@@ -125,12 +125,12 @@ export default function Quote() {
                 id="phone-number"
                 autoComplete="tel"
                 required
-                className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6"
+                className="block w-full rounded-md border-0 py-2 px-3.5 text-slate-400 bg-slate-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-400 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
           <div className="sm:col-span-2">
-            <label htmlFor="address" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label htmlFor="address" className="block text-sm font-semibold leading-6 text-white">
               Address
             </label>
             <div className="relative mt-2.5">
@@ -141,12 +141,12 @@ export default function Quote() {
                 id="address"
                 autoComplete="address"
                 required
-                className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6"
+                className="block w-full rounded-md border-0 py-2 px-3.5 text-slate-400 bg-slate-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-400 sm:text-sm sm:leading-6"
                 />
             </div>
           </div>
           <div>
-            <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-white">
               City
             </label>
             <div className="mt-2.5">
@@ -156,12 +156,12 @@ export default function Quote() {
                 id="city"
                 required
                 autoComplete="home city"
-                className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6"
+                className="block w-full rounded-md border-0 py-2 px-3.5 text-slate-400 bg-slate-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-400 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
           <div>
-            <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-white">
               State
             </label>
             <div className="mt-2.5">
@@ -171,12 +171,12 @@ export default function Quote() {
                 id="state"
                 required
                 autoComplete="home state"
-                className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6"
+                className="block w-full rounded-md border-0 py-2 px-3.5 text-slate-400 bg-slate-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-400 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
           <fieldset className="sm:col-span-2">
-                  <legend className="block text-sm font-semibold leading-6 text-gray-900">Receive Quote by:</legend>
+                  <legend className="block text-sm font-semibold leading-6 text-white"> Receive Quote by:</legend>
                   <div className="justify-center my-6 text-sm leading-6 grid grid-cols-4 text-gray-600">
                     
                     <div className="flex gap-x-2.5">
@@ -185,7 +185,7 @@ export default function Quote() {
                         name="request_form"
                         defaultValue="email"
                         type="radio"
-                        className="mt-1 h-4 w-4 border-gray-300 border-0 text-sky-600 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-sky-600"
+                        className="mt-1 h-4 w-4 border-gray-300 border-0 text-sky-400 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-sky-400 bg-slate-900"
                       />
                       <label htmlFor="request-email">Email</label>
                     </div>
@@ -195,7 +195,7 @@ export default function Quote() {
                         name="request_form"
                         defaultValue="phone"
                         type="radio"
-                        className="mt-1 h-4 w-4 border-gray-300 border-0 text-sky-600 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-sky-600"
+                        className="mt-1 h-4 w-4 border-sky-400 border-0 text-sky-400 shadow-sm ring-1 ring-inset ring-slate-400 focus:ring-sky-400 bg-slate-900"
                       />
                       <label htmlFor="request-phone">Phone</label>
                     </div>
@@ -205,7 +205,7 @@ export default function Quote() {
                         name="request_form"
                         defaultValue="appointment"
                         type="radio"
-                        className="mt-1 h-4 w-4 border-gray-300 border-0 text-sky-600 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-sky-600"
+                        className="mt-1 h-4 w-4 border-gray-300 border-0 text-sky-400 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-sky-400 bg-slate-900"
                       />
                       <label htmlFor="request-appointment">In-person appointment</label>
                     </div>
@@ -213,7 +213,7 @@ export default function Quote() {
                 </fieldset>
           
           <div className="sm:col-span-2">
-            <label htmlFor="date" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label htmlFor="date" className="block text-sm font-semibold leading-6 text-white">
               Date & Time
             </label>
             <div className="mt-2.5">
@@ -231,7 +231,7 @@ export default function Quote() {
                 id="date"
                 autoComplete="off"
                 placeholderText="Only for Appointment"
-                className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6"
+                className="block w-full rounded-md border-0 py-2 px-3.5 text-slate-400 bg-slate-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-400 sm:text-sm sm:leading-6"
                 />
             </div>
           </div>
@@ -246,7 +246,7 @@ export default function Quote() {
                 id="message"
                 placeholder='Optional'
                 rows={4}
-                className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6"
+                className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-400 bg-slate-900 shadow-sm ring-1 ring-inset ring-gray-400 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-400 sm:text-sm sm:leading-6"
                 defaultValue={''}
               />
             </div>
@@ -256,7 +256,7 @@ export default function Quote() {
           <button
             type="submit"
             value="Send"
-            className="block w-full rounded-md bg-sky-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600"
+            className="block w-full rounded-md bg-sky-400/20 px-3.5 py-2.5 text-center text-sm font-semibold text-sky-400 shadow-sm hover:bg-sky-400/30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600"
             href="/"
             
           >
@@ -270,3 +270,4 @@ export default function Quote() {
     </div>
   )
 }
+
