@@ -7,11 +7,12 @@ import { Disclosure } from '@headlessui/react'
 import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline'
 import Quote from "./Pages/Quote"
 import Splider from "./Pages/Splider"
+import chris from "../Componets/light pictures/chris.jpg"
 import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
 import phone from "../Componets/light pictures/phone.jpg"
 import valentines from "../Componets/light pictures/valentines.JPG"
 import multi2 from "../Componets/light pictures/multi2.jpg"
-import vid from "../Componets/light pictures/webvid.mp4"
+import vid from "../Componets/light pictures/webvid3.mp4"
 
 const faqs = [
   {
@@ -22,7 +23,8 @@ const faqs = [
   {
     question: "Where do my lights go?",
     answer:
-    "The lights are installed underneath your roofline behind the trim piece of your house. All wiring is enclosed in a metal casing making the light’s framework unnoticeable from the street. On top of that, we can color-match the casing, making the framework virtually invisible."
+    "The lights are installed underneath your roofline behind the trim piece of your house. All wiring is enclosed in a metal casing making the light’s framework unnoticeable from the street. On top of that, we can color-match the casing, making the framework virtually invisible.",
+    
   },
   {
     question: "Do I have to plug them in every night?",
@@ -38,6 +40,10 @@ const faqs = [
     answer:
     "Cost is calculated per square foot of your home. Contact us for a low-price quote that you can’t find anywhere else. We have the best rates in the Treasure Valley without compromising quality. We consistently offer referral programs and discounts for you to keep more money in your pocket!"
   },
+  {
+    question: "How long do permanent lights last?",
+    answer: "50,000 hours! If you used them every night for 6 hours that would last 22 years!",
+  }
 ]
 
 const features = [
@@ -46,6 +52,7 @@ const features = [
     description:
       'Our LED lights are designed for every season. Show your holiday spirit, cheer on your favorite sports team, or celebrate a birthday with any combination of colors, patterns, and blinking lights.',
     icon: GiftIcon,
+    image: {chris},
   },
   {
     name: 'Accent your House',
@@ -78,7 +85,7 @@ const stats = [
     return (
         <>
         <div className="bg-slate-900">
-        <div className="relative isolate overflow-hidden pt-14 bg-slate-800">
+        <div className="relative isolate overflow-hidden pt-14">
         <video 
           autoplay="{true}"
           muted 
@@ -86,7 +93,7 @@ const stats = [
           className="absolute inset-0 -z-10 h-full w-full object-cover mix-blend-multiply bg-video">
           <source 
           src={vid}
-          type="video/mp4"
+          
           />
         </video>
         <div
@@ -98,27 +105,26 @@ const stats = [
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-sky-400 ring-1 bg-sky-400/10 ring-sky-400/10 hover:ring-sky-400/20 hover:bg-sky-400/20">
               Learn more about our LED Smart Lights {' '}
-              <a href="/Accent" className="font-semibold text-sky-400">
+              <a href="/Quote" className="font-semibold text-sky-400">
                 <span className="absolute inset-0" aria-hidden="true" />
                 Read more <span aria-hidden="true">&rarr;</span>
               </a>
             </div>
           </div>
-          <div className="text-center">
+          <div className="text-center -mt-28 md:pb-36 md:mt-0">
           <h1 className="pt-10 pb-15 text-5xl md:text-7xl text-white font-extrabold font-teko">Forever <span className="text-sky-600">Lighting</span></h1>
-                    
-            <p className="mt-6 text-lg leading-8 text-gray-300">
-            Finally, there’s a better way to light up your house than hanging new lights for every season and event. 
-            Never put holiday lights on again. <span className="font-2xl">Ever.</span> 
+            <div className="mt-64 md:mt-0">        
+            <p className="mt-6 text-lg leading-8 text-gray-300"> 
+            Never put holiday lights on again. <span className="font-bold">Ever.</span> 
             </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
+            <div className="mt-6 flex items-center justify-center gap-x-6">
               <a
                 href="/Quote"
                 className="rounded-md bg-sky-400/10 px-3.5 py-2.5 text-sm font-semibold text-sky-400 shadow-sm hover:bg-sky-400/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
               >
                 Request Quote
               </a>
-              
+            </div>
             </div>
           </div>
         </div>
@@ -169,7 +175,7 @@ const stats = [
            </div>
           </div>
          </div>
-         <div className="relative isolate pt-14 overflow-hidden bg-gray-700">
+         <div className="relative isolate pt-14 overflow-hidden bg-slate-400 md:bg-slate-700">
         <img
           src={valentines}
           alt=""
@@ -225,7 +231,7 @@ const stats = [
         </div>
      </div> 
     </div>
-          <div className="relative isolate overflow-hidden bg-slate-800 py-24 sm:py-32">
+          <div className="relative isolate overflow-hidden bg-slate-500 md:bg-slate-700 py-24 sm:py-32">
             <img
               src={multi2}
               alt=""
@@ -252,7 +258,10 @@ const stats = [
                   {feature.name}
                 </dt>
                 <dd className="mt-2 text-base leading-7 text-gray-400">{feature.description}</dd>
+                
               </div>
+               
+            
             ))}
           </dl>
         </div>
