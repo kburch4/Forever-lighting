@@ -91,7 +91,7 @@ const stats = [
           muted 
           loop
           playsinline
-          className="absolute inset-0 -z-10 h-full w-full object-cover mix-blend-multiply bg-video">
+          className="absolute inset-0 -z-10 h-full w-full object-cover mix-blend-multiply">
           <source 
           src={vid}
           
