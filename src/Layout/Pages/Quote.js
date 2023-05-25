@@ -57,7 +57,7 @@ export default function Quote() {
   
   return (
     
-    <div className="isolate bg-slate-900 py-24 px-6 sm:py-32 lg:px-8">
+    <div className="isolate bg-slate-800 py-24 px-6 sm:py-32 lg:px-8">
       
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Request a Quote</h2>
@@ -237,7 +237,7 @@ export default function Quote() {
           </div>
             
           <div className="sm:col-span-2">
-            <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label htmlFor="message" className="block text-sm font-semibold leading-6 text-white">
               Message
             </label>
             <div className="mt-2.5">
