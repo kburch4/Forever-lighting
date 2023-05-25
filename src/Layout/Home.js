@@ -92,7 +92,7 @@ const stats = [
           muted="true"
           loop
           preload=""
-          controls
+          
           className="absolute inset-0 h-full w-full object-cover mix-blend-multiply">
           <source 
           src={vid}
