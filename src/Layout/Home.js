@@ -88,7 +88,7 @@ const stats = [
         <div className="relative isolate overflow-hidden pt-14">
         <video 
           autoplay
-          controls
+          
           muted 
           loop
           playsinline
