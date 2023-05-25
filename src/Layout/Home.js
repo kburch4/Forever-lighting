@@ -91,7 +91,7 @@ const stats = [
           playsinline
           muted
           loop
-          
+          controls
           
           className="absolute inset-0 h-full w-full object-cover mix-blend-multiply">
           <source 
@@ -114,7 +114,7 @@ const stats = [
               </a>
             </div>
           </div>
-          <div className="text-center relative mt-96 md:pb-36 md:mt-0">
+          <div className="text-center relative mt-80 md:pb-36 md:mt-0">
           <h1 className="text-5xl md:text-7xl text-white font-extrabold font-teko">Forever <span className="text-sky-600">Lighting</span></h1>
             <div className="">        
             <p className="mt-6 text-lg leading-8 text-gray-300"> 
@@ -139,7 +139,7 @@ const stats = [
         </div>
       </div>
     </div>
-    <div className="bg-slate-700 py-24 sm:py-32">
+    <div className="bg-slate-800 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:pr-4 rounded-lg">
