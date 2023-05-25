@@ -87,10 +87,10 @@ const stats = [
         <div className="bg-slate-900">
         <div className="relative isolate overflow-hidden pt-14">
         <video 
-          autoplay
-          
-          muted 
+         autoplay="true"
+          muted="true"
           loop
+          
           playsinline
           className="absolute inset-0 -z-10 h-full w-full object-cover mix-blend-multiply">
           <source 
