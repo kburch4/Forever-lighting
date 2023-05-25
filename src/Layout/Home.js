@@ -87,7 +87,7 @@ const stats = [
         <div className="bg-slate-900">
         <div className="relative isolate overflow-hidden pt-14">
         <video 
-          autoplay="{false}"
+          autoplay
           controls
           muted 
           loop
@@ -98,9 +98,7 @@ const stats = [
           
           />
         </video>
-        <script>
-        document.getElementById('vid').play();
-        </script>
+        
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           aria-hidden="true"
