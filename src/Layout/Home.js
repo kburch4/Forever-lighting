@@ -33,12 +33,12 @@ const faqs = [
   {
     question: "Can I turn the lights on when I’m not home?",
     answer:
-    "Yes! Using Wi-Fi, turn the lights on or off wherever you are."
+    "Yes! You can connect the app through any home assist device to turn on your lights."
   },
   {
     question: "How much do permanent lights cost?",
     answer:
-    "Cost is calculated per square foot of your home. Contact us for a low-price quote that you can’t find anywhere else. We have the best rates in the Treasure Valley without compromising quality. We consistently offer referral programs and discounts for you to keep more money in your pocket!"
+    "Cost is calculated per foot of the part of your roof that will have lights. Contact us for a low-price quote that you can’t find anywhere else. We have the best rates in the Treasure Valley without compromising quality. We consistently offer referral programs and discounts for you to keep more money in your pocket!"
   },
   {
     question: "How long do permanent lights last?",
@@ -91,8 +91,8 @@ const stats = [
           playsinline
           muted
           loop
-          controls
           
+          controls
           className="absolute inset-0 h-full w-full object-cover mix-blend-multiply">
           <source 
           src={vid}
@@ -271,7 +271,7 @@ const stats = [
       </div>
     </div>
     
-    <div className="bg-slate-900">
+    <div className="bg-slate-800">
       <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:py-40 lg:px-8">
         <div className="mx-auto max-w-4xl divide-y divide-gray-100/50">
           <h1 className="text-4xl font-bold leading-10 tracking-tight text-white">Frequently asked questions</h1>
