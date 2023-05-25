@@ -114,9 +114,9 @@ const stats = [
               </a>
             </div>
           </div>
-          <div className="text-center relative -mt-28 md:pb-36 md:mt-0">
-          <h1 className="pt-10 pb-15 text-5xl md:text-7xl text-white font-extrabold font-teko">Forever <span className="text-sky-600">Lighting</span></h1>
-            <div className="mt-48 pb-44 md:mt-0 md:pb-0">        
+          <div className="text-center relative mt-52 md:pb-36 md:mt-0">
+          <h1 className="text-5xl md:text-7xl text-white font-extrabold font-teko">Forever <span className="text-sky-600">Lighting</span></h1>
+            <div className="">        
             <p className="mt-6 text-lg leading-8 text-gray-300"> 
             Never put holiday lights on again. <span className="font-bold">Ever.</span> 
             </p>
