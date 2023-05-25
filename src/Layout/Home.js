@@ -87,7 +87,7 @@ const stats = [
         <div className="bg-slate-900">
         <div className="relative isolate overflow-hidden pt-14">
         <video 
-          autoplay="{true}"
+          autoplay="{false}"
           muted 
           loop
           playsinline
