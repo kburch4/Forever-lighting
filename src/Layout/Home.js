@@ -114,7 +114,7 @@ const stats = [
               </a>
             </div>
           </div>
-          <div className="text-center relative mt-52 md:pb-36 md:mt-0">
+          <div className="text-center relative mt-96 md:pb-36 md:mt-0">
           <h1 className="text-5xl md:text-7xl text-white font-extrabold font-teko">Forever <span className="text-sky-600">Lighting</span></h1>
             <div className="">        
             <p className="mt-6 text-lg leading-8 text-gray-300"> 
