@@ -85,17 +85,17 @@ const stats = [
     return (
         <>
         <div className="bg-slate-900">
-        <div className="relative isolate overflow-hidden pt-14">
+        <div className="relative isolate pt-14">
         <video 
-         autoplay="true"
+          autoplay="true"
+          playsinline
           muted="true"
           loop
-          
-          playsinline
-          className="absolute inset-0 -z-10 h-full w-full object-cover mix-blend-multiply">
+          preload=""
+          controls
+          className="absolute inset-0 h-full w-full object-cover mix-blend-multiply">
           <source 
           src={vid}
-          
           />
         </video>
         
@@ -114,7 +114,7 @@ const stats = [
               </a>
             </div>
           </div>
-          <div className="text-center -mt-28 md:pb-36 md:mt-0">
+          <div className="text-center relative -mt-28 md:pb-36 md:mt-0">
           <h1 className="pt-10 pb-15 text-5xl md:text-7xl text-white font-extrabold font-teko">Forever <span className="text-sky-600">Lighting</span></h1>
             <div className="mt-48 pb-44 md:mt-0 md:pb-0">        
             <p className="mt-6 text-lg leading-8 text-gray-300"> 
@@ -153,7 +153,7 @@ const stats = [
             </div>
           
         <div>
-            <div className="text-base leading-7 text-gray-700 lg:max-w-lg">
+            <div className="text-base leading-7 text-gray-800 lg:max-w-lg">
               
               <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
                 Bright at Night and Invisible by Day
