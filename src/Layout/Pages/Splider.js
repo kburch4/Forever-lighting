@@ -11,7 +11,7 @@ import valentines from "../../Componets/light pictures/valentines.JPG"
 export default function Splider() {
     
     return(
-        <div className="bg-slate-900">
+        <div className="bg-slate-800">
         <Splide aria-label="My Favorite Images" className=" md:px-32  md:space-x-10" options={ {
           perMove : 1,
           perPage : 2,
