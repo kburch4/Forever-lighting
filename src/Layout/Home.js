@@ -102,7 +102,33 @@ const stats = [
           aria-hidden="true"
         >
         </div>
-        
+        <div className="mx-auto max-w-2xl py-24 sm:py-48 lg:py-32">
+          <div className="hidden sm:mb-8 sm:flex sm:justify-center">
+            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-sky-400 ring-1 bg-sky-400/10 ring-sky-400/10 hover:ring-sky-400/20 hover:bg-sky-400/20">
+              Learn more about our LED Smart Lights {' '}
+              <a href="/Quote" className="font-semibold text-sky-400">
+                <span className="absolute inset-0" aria-hidden="true" />
+                Read more <span aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          </div>
+          <div className="text-center -mt-28 md:pb-36 md:mt-0">
+          <h1 className="pt-10 pb-15 text-5xl md:text-7xl text-white font-extrabold font-teko">Forever <span className="text-sky-600">Lighting</span></h1>
+            <div className="mt-48 pb-44 md:mt-0 md:pb-0">        
+            <p className="mt-6 text-lg leading-8 text-gray-300"> 
+            Never put holiday lights on again. <span className="font-bold">Ever.</span> 
+            </p>
+            <div className="mt-6 flex items-center justify-center gap-x-6">
+              <a
+                href="/Quote"
+                className="rounded-md bg-sky-400/10 px-3.5 py-2.5 text-sm font-semibold text-sky-400 shadow-sm hover:bg-sky-400/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
+              >
+                Request Quote
+              </a>
+            </div>
+            </div>
+          </div>
+        </div>
         <div
           className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
           aria-hidden="true"
