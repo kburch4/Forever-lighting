@@ -1,6 +1,4 @@
 import React, { useState, useRef } from 'react'
-import { ChevronDownIcon } from '@heroicons/react/20/solid'
-import { Switch } from '@headlessui/react'
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import emailjs from '@emailjs/browser';
@@ -62,7 +60,7 @@ export default function Quote() {
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Request a Quote</h2>
         <p className="mt-2 text-lg leading-8 text-slate-400">
-          We will come give you a free quote and demo so you know what you are buying. Fill out the form to set your appointment.
+          Unlock the ultimate lighting solution with over 50,000 hours of illumination lasting for more than 20 years guaranteeing to solve your lighting problems forever. Fill out the form to get your quote today.
         </p>
       </div>
       <form action="#" ref={form} onSubmit={sendEmail} className="mx-auto mt-16 max-w-xl sm:mt-20">
@@ -270,4 +268,3 @@ export default function Quote() {
     </div>
   )
 }
-
