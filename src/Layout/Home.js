@@ -76,7 +76,7 @@ const features = [
 const stats = [
     { id: 1, name: 'Color combinations', value: '+1,000,000' },
     { id: 2, name: 'Light Effects', value: '+100' },
-    { id: 3, name: 'Designs', value: 'Unlimited' },
+    { id: 3, name: 'Hours', value: '+50,000' },
   ]
    
   
@@ -160,7 +160,7 @@ const stats = [
               </h1>
               <div className="max-w-xl">
                 <p className="mt-6 text-slate-400">
-                The lights are installed underneath the house’s roofline, making them unnoticeable from the street during the day. To make them even more invisible, we offer color matching so the light’s casing will match the trim piece of your house, giving them the ultimate disguise.
+                The lights are installed behind the house’s trim, making them unnoticeable from the street during the day. To make them even more invisible, we offer color matching so the light’s casing will match your house, giving them the ultimate disguise.
                 </p>
               </div>
               <div className="mt-12 hidden sm:mb-8 sm:flex sm:justify-center">
@@ -192,7 +192,7 @@ const stats = [
             Touch of a Button
           </h1>
           <p className="mt-6 text-lg leading-8 text-slate-400">
-          Use our app to change to any colors, set timers, and even create a new sequence.
+          Use our app to change to any colors, set timers, and add effects.
           </p>
         </div>
         <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-10 text-white sm:mt-20 sm:grid-cols-2 sm:gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-4">
