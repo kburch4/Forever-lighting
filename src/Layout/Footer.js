@@ -14,7 +14,9 @@ const navigation = {
   ],
   locations: [
     { name: 'ID: Boise, Meridian,' },
-    { name: 'Eagle, Kuna, Nampa' },
+    { name: 'Eagle, Kuna, Nampa,' },
+    { name: 'Idaho Falls, Rexburg,'},
+    { name: 'Pocotello, Twin Falls'},
         
   ],
   legal: [
@@ -68,18 +70,6 @@ export default function Footer() {
           </div>
           <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
             <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 className="text-sm font-semibold leading-6 text-white">Solutions</h3>
-                <ul role="list" className="mt-6 space-y-4">
-                  {navigation.solutions.map((item) => (
-                    <li key={item.name}>
-                      <a href={item.href} className="text-sm leading-6 text-gray-300 hover:text-white">
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
               <div className="mt-10 md:mt-0">
                 <h3 className="text-sm font-semibold leading-6 text-white">Support</h3>
                 <ul role="list" className="mt-6 space-y-4">
@@ -117,3 +107,4 @@ export default function Footer() {
     </footer>
   )
 }
+
