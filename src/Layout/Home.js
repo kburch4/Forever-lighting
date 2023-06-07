@@ -14,6 +14,7 @@ import valentines from "../Componets/light pictures/valentines.JPG"
 import multi2 from "../Componets/light pictures/multi2.jpg"
 import vid from "../Componets/light pictures/webvid3.mp4"
 
+
 const faqs = [
   {
     question: "Can they be used for other holidays besides Christmas?",
