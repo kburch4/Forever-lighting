@@ -51,20 +51,20 @@ const features = [
   {
     name: 'Celebrate Every Holiday',
     description:
-      'Our LED lights are designed for every season. Show your holiday spirit, cheer on your favorite sports team, or celebrate a birthday with any combination of colors, patterns, and blinking lights.',
+      'Forever Lights are not only for Christmas but for every season. Show your holiday spirit, cheer on your favorite sports team, or celebrate a birthday. Use any combination of colors, patterns, and blinking lights.',
     icon: GiftIcon,
     image: {chris},
   },
   {
     name: 'Accent your House',
     description:
-      'Whether you’re looking to accent your home or add additional security, our energy-efficient LED white lights can do both! Adjust the brightness and hue of white to increase your home’s security and add a touch of elegance.',
+      'Energy-efficient white lights accent your home and bring a warm and welcoming ambiance. Adjust the brightness and hue of white to increase your home’s security and add a touch of elegance.',
     icon: LockClosedIcon,
   },
   {
     name: 'Day or Night',
     description:
-      "Forever Lights are installed underneath your house’s trim with enclosed wires. And with our color-matching system, your light's enclosure is completely invisible during the day, adding security and illuminating your home at night.",
+      "We install the lights underneath your house's trim with enclosed wires. Our color-matching system makes your light enclosure virtually invisible during the day. At the same time, you are creating a magical work of art at night.",
     icon: SunIcon,
   },
   {
@@ -79,7 +79,52 @@ const stats = [
     { id: 2, name: 'Light Effects', value: '+100' },
     { id: 3, name: 'Hours', value: '+50,000' },
   ]
-   
+const featuredTestimonial = {
+  body: 'Amazing! Nothing but positive things to say about Forever Lighting. The lights look incredible, the service was outstanding and communication about everything from scheduling to how to use the app was superb. I highly recommend them!',
+  author: {
+    name: 'Bridget'
+  }
+}
+const testimonials = [
+  [
+    [
+      {
+  body: 'Forever Lighting were very professional and made sure I understood their installation process and also how to work the app and choose the light sequences I want. I have so much fun choosing something different for the differnt holidays or something subtle on other days. So much fun having these forever lights on my home!',
+  author: {
+    name: 'Melanie'
+  },
+},
+    ],
+    [
+      {
+        body: ' I was pleasantly surprised by the competitive pricing offered by Forever Lighting. Their rates were reasonable considering the quality of service provided. The transparency in their pricing structure and the absence of any hidden costs or surprises were truly refreshing.',
+        author: {
+          name: 'Steve'
+        },
+      },
+    ],
+    [
+      {
+        body: "I am extremely satisfied with Forever Lighting's service and would highly recommend them to anyone in need of lighting installation.",
+        author: {
+          name: 'Jennifer'
+        },
+      },
+    ],
+    [
+      {
+        body: "The quality of their work is top-notch, and the lights they put in look absolutely stunning. I'm beyond happy with Forever Lighting's service and would enthusiastically recommend them to anyone.",
+        author: {
+          name: 'Emilee'
+        },
+      },
+    ],
+  ],
+]
+function classNames(...classes) {
+  return classes.filter(Boolean).join(' ')
+}
+
   
   export default function Home() {
     
@@ -94,7 +139,7 @@ const stats = [
               <svg viewBox="0 0 2 2" className="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true">
                 <circle cx={1} cy={1} r={1} />
               </svg>
-              $1000 off your quote from June 1st - July 4th&nbsp;<span aria-hidden="true">&rarr;</span>
+              $500 off your quote from June 1st - July 4th&nbsp;<span aria-hidden="true">&rarr;</span>
             </a>
           </p>
           <div className="flex flex-1 justify-end">
@@ -176,9 +221,15 @@ const stats = [
                 Bright at Night and Invisible by Day
               </h1>
               <div className="max-w-xl">
-                <p className="mt-6 text-slate-400">
-                The lights are installed behind the house’s trim, making them unnoticeable from the street during the day. To make them even more invisible, we offer color matching so the light’s casing will match your house, giving them the ultimate disguise.
+                <p className="mt-6 text-slate-300">
+                Are you ready to become the house everyone wants to drive by in the neighborhood? Forever Lights are LED lights that go up in one day and stay up every day. 
                 </p>
+              <p className="text-slate-300 mt-4">
+              They last up to <span className="font-bold">50,000</span> hours! 
+              </p>
+              <p className="text-slate-300 mt-4">
+              We color-match the light’s casing to your home, making them unnoticeable from the street during the day. Magically brighten your home, turning it into a mesmerizing masterpiece every night. 
+              </p>
               </div>
               <div className="mt-12 hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-sky-400 ring-1 bg-sky-400/10 ring-sky-400/10 hover:ring-sky-400/20 hover:bg-sky-400/20">
@@ -208,14 +259,14 @@ const stats = [
           <h1 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Touch of a Button
           </h1>
-          <p className="mt-6 text-lg leading-8 text-slate-400">
+          <p className="mt-6 text-lg leading-8 text-slate-300">
           Use our app to change to any colors, set timers, and add effects.
           </p>
         </div>
         <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-10 text-white sm:mt-20 sm:grid-cols-2 sm:gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-4">
           {stats.map((stat) => (
             <div key={stat.id} className="flex flex-col gap-y-3 border-l border-white/10 pl-3">
-              <dt className="text-sm leading-6 text-slate-400">{stat.name}</dt>
+              <dt className="text-sm leading-6 text-slate-300">{stat.name}</dt>
               <dd className="order-first text-3xl font-semibold tracking-tight">{stat.value}</dd>
             </div>
           ))}
@@ -260,11 +311,10 @@ const stats = [
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Every feature for any of your needs
+            All-Inclusive
           </p>
-          <p className="mt-6 text-lg leading-8 text-gray-400">
-            Design your house for every Holdiay, Game, or just for the everyday. Use our easy to use app to
-            make your lights any way you want them.
+          <p className="mt-6 text-lg leading-8 text-slate-300">
+          With Forever Lights, you're in control, enhancing your curb appeal and securing your space with effortless brilliance
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
@@ -277,13 +327,68 @@ const stats = [
                   </div>
                   {feature.name}
                 </dt>
-                <dd className="mt-2 text-base leading-7 text-gray-400">{feature.description}</dd>
+                <dd className="mt-2 text-base leading-7 text-gray-300">{feature.description}</dd>
                 
               </div>
                
             
             ))}
           </dl>
+        </div>
+      </div>
+    </div>
+    <div className="relative isolate bg-slate-800 md:bg-slate-800 pb-32 pt-24 sm:pt-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-xl text-center">
+          <h2 className="text-lg font-semibold leading-8 tracking-tight text-sky-400">Testimonials</h2>
+          <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            We have worked with amazing people
+          </p>
+        </div>
+        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
+          <figure className="col-span-2 block rounded-2xl bg-sky-400/10 shadow-lg ring-1 ring-gray-900/5 xl:col-start-2 xl:row-end-2">
+            <blockquote className="p-12 text-xl font-semibold leading-8 tracking-tight text-sky-400">
+              <p>{`“${featuredTestimonial.body}”`}</p>
+            </blockquote>
+            <figcaption className="flex items-center gap-x-4 border-t border-sky-400/10 px-6 py-4">
+              <div className="flex-auto">
+                <div className="font-semibold text-white">{featuredTestimonial.author.name}</div>
+              </div>
+            </figcaption>
+          </figure>
+          {testimonials.map((columnGroup, columnGroupIdx) => (
+            <div key={columnGroupIdx} className="space-y-8 xl:contents xl:space-y-0">
+              {columnGroup.map((column, columnIdx) => (
+                <div
+                key={columnIdx}
+                className={classNames(
+                  (columnGroupIdx === 0 && columnIdx === 0) ||
+                    (columnGroupIdx === testimonials.length - 1 && columnIdx === columnGroup.length - 1)
+                    ? 'md:row-span-2'
+                    : 'md:row-start-2',
+                  'space-y-8'
+                )}
+              >
+                  {column.map((testimonial) => (
+                    <figure
+                      className="rounded-2xl bg-sky-400/10 p-6 shadow-lg ring-1 ring-gray-900/5 cols-span-2"
+                    >
+                      <blockquote className="text-sky-400 font-semibold">
+                        <p>{`“${testimonial.body}”`}</p>
+                      </blockquote>
+                      <figcaption className="mt-6 flex-auto items-center gap-x-4">
+                        
+                        <div>
+                          <div className="font-semibold text-white">{testimonial.author.name}</div>
+                          
+                        </div>
+                      </figcaption>
+                    </figure> 
+                  ))}
+                </div>
+              ))}
+            </div>
+          ))}
         </div>
       </div>
     </div>
@@ -310,7 +415,7 @@ const stats = [
                       </Disclosure.Button>
                     </dt>
                     <Disclosure.Panel as="dd" className="mt-2 pr-12">
-                      <p className="text-base leading-7 text-slate-400">{faq.answer}</p>
+                      <p className="text-base leading-7 text-slate-300">{faq.answer}</p>
                     </Disclosure.Panel>
                   </>
                 )}
