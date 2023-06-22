@@ -139,7 +139,7 @@ function classNames(...classes) {
               <svg viewBox="0 0 2 2" className="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true">
                 <circle cx={1} cy={1} r={1} />
               </svg>
-              $500 off your quote from June 1st - July 4th&nbsp;<span aria-hidden="true">&rarr;</span>
+              $1000 off your quote from June 1st - July 4th&nbsp;<span aria-hidden="true">&rarr;</span>
             </a>
           </p>
           <div className="flex flex-1 justify-end">
