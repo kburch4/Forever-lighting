@@ -131,22 +131,7 @@ function classNames(...classes) {
     return (
         <>
         <div className="bg-slate-900">
-        <div className="fixed inset-x-0 bottom-0 z-50">
-        <div className="flex items-center gap-x-6 bg-gradient-to-r from-red-700 via-white to-blue-700 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
-          <p className="text-sm leading-6 text-slate-900">
-            <a href="/Quote">
-              <strong className="font-semibold">4th of July Sale!</strong>
-              <svg viewBox="0 0 2 2" className="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true">
-                <circle cx={1} cy={1} r={1} />
-              </svg>
-              $1000 off your quote from June 1st - July 4th&nbsp;<span aria-hidden="true">&rarr;</span>
-            </a>
-          </p>
-          <div className="flex flex-1 justify-end">
-            
-          </div>
-        </div>
-      </div>
+        
         <div className="relative isolate pt-14">
         <video 
           autoplay="true"
