@@ -7,13 +7,15 @@ import { Disclosure } from '@headlessui/react'
 import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline'
 import Quote from "./Pages/Quote"
 import Splider from "./Pages/Splider"
-import chris from "../Componets/light pictures/chris.jpg"
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import '@splidejs/splide/css';
+import chris from "../Componets/light pictures/whiteandred.jpg"
 import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
 import phone from "../Componets/light pictures/phone.jpg"
 import valentines from "../Componets/light pictures/valentines.JPG"
 import multi2 from "../Componets/light pictures/multi2.jpg"
-import vid from "../Componets/light pictures/webvid3.mp4"
-
+import accent from "../Componets/light pictures/accent.JPG"
+import blue2 from "../Componets/light pictures/blue2.jpg"
 
 const faqs = [
   {
@@ -89,6 +91,7 @@ const testimonials = [
   [
     [
       {
+        image: darkblue,
   body: 'Forever Lighting were very professional and made sure I understood their installation process and also how to work the app and choose the light sequences I want. I have so much fun choosing something different for the differnt holidays or something subtle on other days. So much fun having these forever lights on my home!',
   author: {
     name: 'Melanie'
@@ -97,6 +100,7 @@ const testimonials = [
     ],
     [
       {
+        image: multi2,
         body: ' I was pleasantly surprised by the competitive pricing offered by Forever Lighting. Their rates were reasonable considering the quality of service provided. The transparency in their pricing structure and the absence of any hidden costs or surprises were truly refreshing.',
         author: {
           name: 'Steve'
@@ -105,6 +109,7 @@ const testimonials = [
     ],
     [
       {
+        image: accent,
         body: "I am extremely satisfied with Forever Lighting's service and would highly recommend them to anyone in need of lighting installation.",
         author: {
           name: 'Jennifer'
@@ -113,6 +118,7 @@ const testimonials = [
     ],
     [
       {
+        image: chris,
         body: "The quality of their work is top-notch, and the lights they put in look absolutely stunning. I'm beyond happy with Forever Lighting's service and would enthusiastically recommend them to anyone.",
         author: {
           name: 'Emilee'
@@ -130,63 +136,77 @@ function classNames(...classes) {
     
     return (
         <>
-        <div className="bg-slate-900">
-        
-        <div className="relative isolate pt-14">
-        <video 
-          autoplay="true"
-          playsinline
-          muted
-          loop
-          
-          controls
-          className="absolute inset-0 h-full w-full object-cover mix-blend-multiply">
-          <source 
-          src={vid}
-          />
-        </video>
-        
-        <div
-          className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-          aria-hidden="true"
-        >
-        </div>
-        <div className="mx-auto max-w-2xl py-24 sm:py-48 lg:py-32">
+        <div className="bg-sky-400/10">
+        <div className="relative isolate ">
+        <Splide aria-label="My Favorite Images" options={ {
+          type : 'loop',
+          perMove : 1,
+          rewind: true,
+          autoplay     : true,
+          pauseOnHover : false,
+          resetProgress: false,
+          } }>
+          <SplideSlide>
+            <div className="relative isolate pt-40 md:pt-20 pb-48 md:pb-42 overflow-hidden bg-slate-400 md:bg-slate-400">
+            <img src={accent} alt="1" className="absolute inset-0 mix-blend-multiply h-full w-full object-cover"
+            />
+           
+            <div className="mx-auto max-w-2xl py-24 sm:py-48 lg:py-32">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-sky-400 ring-1 bg-sky-400/10 ring-sky-400/10 hover:ring-sky-400/20 hover:bg-sky-400/20">
+            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-white ring-1 bg-sky-400/10 ring-sky-400/10 hover:ring-sky-400/20 hover:bg-sky-400/20">
               Learn more about our LED Smart Lights {' '}
-              <a href="/Quote" className="font-semibold text-sky-400">
+              <a href="/Quote" className="font-semibold text-white">
                 <span className="absolute inset-0" aria-hidden="true" />
                 Read more <span aria-hidden="true">&rarr;</span>
               </a>
             </div>
           </div>
-          <div className="text-center relative mt-80 md:pb-36 md:mt-0">
+          <div className="text-center relative">
           <h1 className="text-5xl md:text-7xl text-white font-extrabold font-teko">Forever <span className="text-sky-600">Lighting</span></h1>
             <div className="">        
-            <p className="mt-6 text-lg leading-8 text-gray-300"> 
-            Never put holiday lights on again. <span className="font-bold">Ever.</span> 
-            </p>
-            <div className="mt-6 flex items-center justify-center gap-x-6">
+            
+            <div className="mt-16 flex items-center justify-center gap-x-6">
               <a
                 href="/Quote"
-                className="rounded-md bg-sky-400/10 px-3.5 py-2.5 text-sm font-semibold text-sky-400 shadow-sm hover:bg-sky-400/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
+                className="rounded-md bg-sky-400/10 px-3.5 py-2.5 text-sm font-bold text-sky-400 shadow-sm hover:bg-sky-400/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
               >
                 Request Quote
               </a>
             </div>
             </div>
+            </div>
+            </div>
+            </div>
+            
+          </SplideSlide>
+          <SplideSlide>
+          <div className="relative isolate md:pt-20 md:pb-20 overflow-hidden bg-slate-400">
+            <img src={chris} alt="1" className="absolute inset-0 mix-blend-multiply h-full w-full object-cover"
+            />
+           <div className="mx-auto max-w-2xl py-28">
+            <div className="text-center relative pb-52 mt-32 md:pb-20 md:mt-20">
+              <h1 className="text-5xl md:text-7xl text-white font-extrabold font-teko">Never put Holiday Lights up again. Ever.</h1>
+            </div>
+           </div> 
           </div>
-        </div>
-        <div
-          className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
-          aria-hidden="true"
-        >
+          </SplideSlide>
+          <SplideSlide>
+          <div className="relative isolate md:pt-20 md:pb-0 overflow-hidden bg-slate-400">
+            <img src={blue2} alt="1" className="absolute inset-0 mix-blend-multiply h-full w-full object-cover"
+            />
+           <div className="mx-auto max-w-2xl py-28">
+            <div className="text-center relative pb-52 mt-32 md:pb-40 md:mt-20">
+              <h1 className="text-5xl md:text-7xl text-white font-extrabold font-teko">50,000 hours equals up to 20+ years</h1>
+            </div>
+           </div> 
+          </div>
+          </SplideSlide>
           
+          </Splide>
+        
         </div>
-      </div>
-    </div>
-    <div className="bg-slate-800 py-24 sm:py-32">
+       </div> 
+    <div className="bg-sky-400/10 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:pr-4 rounded-lg">
@@ -331,13 +351,15 @@ function classNames(...classes) {
           </p>
         </div>
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
-          <figure className="col-span-2 block rounded-2xl bg-sky-400/10 shadow-lg ring-1 ring-gray-900/5 xl:col-start-2 xl:row-end-2">
-            <blockquote className="p-12 text-xl font-semibold leading-8 tracking-tight text-sky-400">
+          <figure className="relative isolate overflow-hidden col-span-2 block rounded-2xl bg-slate-400 shadow-lg ring-1 ring-gray-900/5 xl:col-start-2 xl:row-end-2">
+          <img src={blue2} alt="1" className="absolute inset-0 mix-blend-multiply -z-10 h-full w-full object-cover"
+            />
+            <blockquote className="p-12 text-xl font-semibold leading-8 tracking-tight text-white">
               <p>{`“${featuredTestimonial.body}”`}</p>
             </blockquote>
             <figcaption className="flex items-center gap-x-4 border-t border-sky-400/10 px-6 py-4">
               <div className="flex-auto">
-                <div className="font-semibold text-white">{featuredTestimonial.author.name}</div>
+                <div className="font-semibold text-sky-400">{featuredTestimonial.author.name}</div>
               </div>
             </figcaption>
           </figure>
@@ -356,15 +378,17 @@ function classNames(...classes) {
               >
                   {column.map((testimonial) => (
                     <figure
-                      className="rounded-2xl bg-sky-400/10 p-6 shadow-lg ring-1 ring-gray-900/5 cols-span-2"
+                      className="relative isolate overflow-hidden rounded-2xl bg-slate-600 p-6 shadow-lg ring-1 ring-gray-900/5 cols-span-2"
                     >
-                      <blockquote className="text-sky-400 font-semibold">
+                      <img src={testimonial.image} alt="1" className="absolute inset-0 mix-blend-multiply -z-10 h-full w-full object-cover"
+            />  
+                      <blockquote className="text-white font-semibold">
                         <p>{`“${testimonial.body}”`}</p>
                       </blockquote>
                       <figcaption className="mt-6 flex-auto items-center gap-x-4">
                         
                         <div>
-                          <div className="font-semibold text-white">{testimonial.author.name}</div>
+                          <div className="font-semibold text-sky-400">{testimonial.author.name}</div>
                           
                         </div>
                       </figcaption>
