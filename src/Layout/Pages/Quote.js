@@ -3,34 +3,10 @@ import "react-datepicker/dist/react-datepicker.css";
 import emailjs from '@emailjs/browser';
 import Modal from './Modal';
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
-
 
 
 export default function Quote() {
-  //datepicker
-  const d = new Date();
-  const [agreed, setAgreed] = useState(false)
-  const [startDate, setStartDate] = useState(
-    d.setHours(d.setMinutes(new Date(), 0), 9)
-  );
-  
-  let handleColor = (time) => {
-    return time.getHours() > 11 ? "text-success" : "text-error";
-  };
-  
-  const isWeekday = (date) => {
-       
-    return date.getDay() !== 0;
-
-  }
-  const timeFrame = (hour) => {
-    const currentDate = new Date();
-    const selectedDate = new Date(hour);
-    return (hour.getHours() === 9 | hour.getHours() === 10 | hour.getHours() === 11| hour.getHours() === 12 | hour.getHours() === 13 | hour.getHours() === 14 | hour.getHours() === 15 | hour.getHours() === 16 | hour.getHours() === 17 && currentDate.getTime() < selectedDate.getTime())
-  }
+ 
   //modal
   const [modalOn, setModalOn] = useState(false);
   
