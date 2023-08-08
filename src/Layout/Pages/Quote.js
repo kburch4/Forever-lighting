@@ -1,5 +1,4 @@
 import React, { useState, useRef } from 'react'
-import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import emailjs from '@emailjs/browser';
 import Modal from './Modal';
@@ -59,7 +58,7 @@ export default function Quote() {
       
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Request a Quote</h2>
-        <p className="mt-2 text-lg leading-8 text-slate-400">
+        <p className="mt-2 text-lg leading-8 text-slate-300">
           Unlock the ultimate lighting solution with over 50,000 hours of illumination lasting for more than 20 years guaranteeing to solve your lighting problems forever. Fill out the form to get your quote today.
         </p>
       </div>
@@ -76,7 +75,7 @@ export default function Quote() {
                 id="first-name"
                 required
                 autoComplete="given-name"
-                className="block w-full rounded-md bg-slate-900 border-0 py-2 px-3.5 text-slate-400 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-400 sm:text-sm sm:leading-6"
+                className="block w-full rounded-md bg-slate-900 border-0 py-2 px-3.5 text-slate-300 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-400 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
@@ -91,26 +90,11 @@ export default function Quote() {
                 id="last-name"
                 required
                 autoComplete="family-name"
-                className="block w-full rounded-md border-0 py-2 px-3.5 bg-slate-900 text-slate-400 shadow-sm ring-1 ring-inset ring-gray-400 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-400 sm:text-sm sm:leading-6"
+                className="block w-full rounded-md border-0 py-2 px-3.5 bg-slate-900 text-slate-300 shadow-sm ring-1 ring-inset ring-gray-400 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-400 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
           
-          <div className="sm:col-span-2">
-            <label htmlFor="email" className="block text-sm font-semibold leading-6 text-white">
-              Email
-            </label>
-            <div className="mt-2.5">
-              <input
-                type="email"
-                name="email_address"
-                id="email"
-                required
-                autoComplete="email"
-                className="block w-full rounded-md bg-slate-900 border-0 py-2 px-3.5 text-slate-400 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-400 sm:text-sm sm:leading-6"
-              />
-            </div>
-          </div>
           <div className="sm:col-span-2">
             <label htmlFor="phone-number" className="block text-sm font-semibold leading-6 text-white">
               Phone number
@@ -123,7 +107,7 @@ export default function Quote() {
                 id="phone-number"
                 autoComplete="tel"
                 required
-                className="block w-full rounded-md border-0 py-2 px-3.5 text-slate-400 bg-slate-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-400 sm:text-sm sm:leading-6"
+                className="block w-full rounded-md border-0 py-2 px-3.5 text-slate-300 bg-slate-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-400 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
@@ -139,7 +123,7 @@ export default function Quote() {
                 id="address"
                 autoComplete="address"
                 required
-                className="block w-full rounded-md border-0 py-2 px-3.5 text-slate-400 bg-slate-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-400 sm:text-sm sm:leading-6"
+                className="block w-full rounded-md border-0 py-2 px-3.5 text-slate-300 bg-slate-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-400 sm:text-sm sm:leading-6"
                 />
             </div>
           </div>
@@ -154,7 +138,7 @@ export default function Quote() {
                 id="city"
                 required
                 autoComplete="home city"
-                className="block w-full rounded-md border-0 py-2 px-3.5 text-slate-400 bg-slate-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-400 sm:text-sm sm:leading-6"
+                className="block w-full rounded-md border-0 py-2 px-3.5 text-slate-300 bg-slate-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-400 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
@@ -169,70 +153,11 @@ export default function Quote() {
                 id="state"
                 required
                 autoComplete="home state"
-                className="block w-full rounded-md border-0 py-2 px-3.5 text-slate-400 bg-slate-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-400 sm:text-sm sm:leading-6"
+                className="block w-full rounded-md border-0 py-2 px-3.5 text-slate-300 bg-slate-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-400 sm:text-sm sm:leading-6"
               />
             </div>
-          </div>
-          <fieldset className="sm:col-span-2">
-                  <legend className="block text-sm font-semibold leading-6 text-white"> Receive Quote by:</legend>
-                  <div className="justify-center my-6 text-sm leading-6 grid grid-cols-4 text-gray-600">
-                    
-                    <div className="flex gap-x-2.5">
-                      <input
-                        id="request_email"
-                        name="request_form"
-                        defaultValue="email"
-                        type="radio"
-                        className="mt-1 h-4 w-4 border-gray-300 border-0 text-sky-400 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-sky-400 bg-slate-900"
-                      />
-                      <label htmlFor="request-email">Email</label>
-                    </div>
-                    <div className="flex gap-x-2.5">
-                      <input
-                        id="request_phone"
-                        name="request_form"
-                        defaultValue="phone"
-                        type="radio"
-                        className="mt-1 h-4 w-4 border-sky-400 border-0 text-sky-400 shadow-sm ring-1 ring-inset ring-slate-400 focus:ring-sky-400 bg-slate-900"
-                      />
-                      <label htmlFor="request-phone">Phone</label>
-                    </div>
-                    <div className="flex gap-x-2.5">
-                      <input
-                        id="request_appointment"
-                        name="request_form"
-                        defaultValue="appointment"
-                        type="radio"
-                        className="mt-1 h-4 w-4 border-gray-300 border-0 text-sky-400 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-sky-400 bg-slate-900"
-                      />
-                      <label htmlFor="request-appointment">In-person appointment</label>
-                    </div>
-                  </div>
-                </fieldset>
+          </div>     
           
-          <div className="sm:col-span-2">
-            <label htmlFor="date" className="block text-sm font-semibold leading-6 text-white">
-              Date & Time
-            </label>
-            <div className="mt-2.5">
-                <DatePicker
-                selected={startDate}
-                onChange={(date) => setStartDate(date)}
-                showTimeSelect
-                filterTime={timeFrame}
-                filterDate={isWeekday}
-                minDate={new Date()}
-                timeIntervals={60}
-                timeClassName={handleColor}
-                name='day_time'
-                dateFormat="MMMM d, yyyy h:mm aa"
-                id="date"
-                autoComplete="off"
-                placeholderText="Only for Appointment"
-                className="block w-full rounded-md border-0 py-2 px-3.5 text-slate-400 bg-slate-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-400 sm:text-sm sm:leading-6"
-                />
-            </div>
-          </div>
             
           <div className="sm:col-span-2">
             <label htmlFor="message" className="block text-sm font-semibold leading-6 text-white">
@@ -254,7 +179,7 @@ export default function Quote() {
           <button
             type="submit"
             value="Send"
-            className="block w-full rounded-md bg-sky-400/20 px-3.5 py-2.5 text-center text-sm font-semibold text-sky-400 shadow-sm hover:bg-sky-400/30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600"
+            className="block w-full rounded-md bg-sky-400/10 px-3.5 py-2.5 text-center text-sm font-semibold text-sky-400 shadow-sm hover:bg-sky-400/30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600"
             href="/"
             
           >
