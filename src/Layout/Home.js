@@ -1,21 +1,29 @@
-import React from "react"
-import darkblue from "../Componets/light pictures/blue.JPG"
-import day from "../Componets/light pictures/day.JPG"
-import './Home.css';
-import { SunIcon, GiftIcon, DevicePhoneMobileIcon, LockClosedIcon } from '@heroicons/react/24/outline'
-import { Disclosure } from '@headlessui/react'
-import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline'
-import Quote from "./Pages/Quote"
-import Splider from "./Pages/Splider"
+import React, { useState } from "react";
+import { Disclosure } from '@headlessui/react';
+import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline';
+import {
+  SunIcon,
+  GiftIcon,
+  DevicePhoneMobileIcon,
+  LockClosedIcon,
+} from '@heroicons/react/24/outline';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
-import '@splidejs/splide/css';
-import chris from "../Componets/light pictures/whiteandred.jpg"
 import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
-import phone from "../Componets/light pictures/phone.jpg"
-import valentines from "../Componets/light pictures/valentines.JPG"
-import multi2 from "../Componets/light pictures/multi2.jpg"
-import accent from "../Componets/light pictures/accent.JPG"
-import blue2 from "../Componets/light pictures/blue2.jpg"
+import darkblue from "../Componets/light pictures/blue.JPG";
+import day from "../Componets/light pictures/day.JPG";
+import chris from "../Componets/light pictures/whiteandred.jpg";
+import webvid from "../Componets/light pictures/webvideo.mp4";
+import phone from "../Componets/light pictures/phone.jpg";
+import valentines from "../Componets/light pictures/valentines.JPG";
+import multi2 from "../Componets/light pictures/multi.PNG";
+import accent from "../Componets/light pictures/accent.JPG";
+import blue2 from "../Componets/light pictures/blue2.jpg";
+import green from "../Componets/light pictures/green.PNG";
+import barr from "../Componets/light pictures/barrus.jpg"
+import Splider from "./Pages/Splider";
+import Quote from "./Pages/Quote";
+
+
 
 const faqs = [
   {
@@ -109,7 +117,7 @@ const testimonials = [
     ],
     [
       {
-        image: accent,
+        image: green,
         body: "I am extremely satisfied with Forever Lighting's service and would highly recommend them to anyone in need of lighting installation.",
         author: {
           name: 'Jennifer'
@@ -136,7 +144,7 @@ function classNames(...classes) {
     
     return (
         <>
-        <div className="bg-sky-400/10">
+        <div className="bg-sky-900/10">
         <div className="relative isolate ">
         <Splide aria-label="My Favorite Images" options={ {
           type : 'loop',
@@ -206,7 +214,36 @@ function classNames(...classes) {
         
         </div>
        </div> 
-    <div className="bg-sky-400/10 py-24 sm:py-32">
+       <div className="bg-sky-900/10 py-24 sm:py-32">
+       <div className="mx-auto pb-10">
+          <h1 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            Your Lights Your Way
+          </h1>
+          <p className="mt-6 text-lg leading-8 text-slate-300">
+          Change to 100+ different effects all from your phone
+          </p>
+        </div>
+      <div className="mx-auto max-w-7xl px-6 lg:px-40">      
+        <div className="">
+            
+          <video 
+          autoplay="true"
+          playsinline
+          muted
+          loop
+          
+          controls
+          className="rounded-3xl">
+          <source 
+          src={webvid}
+          />
+        </video>
+              
+           </div>
+          </div>
+         </div>
+      <div className="mx-auto divide-gray-100/50"/>
+      <div className="bg-sky-900/10 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:pr-4 rounded-lg">
@@ -251,7 +288,8 @@ function classNames(...classes) {
            </div>
           </div>
          </div>
-         <div className="relative isolate pt-14 overflow-hidden bg-slate-400 md:bg-slate-700">
+         
+      <div className="relative isolate pt-14 overflow-hidden bg-slate-400 md:bg-slate-700">
         <img
           src={valentines}
           alt=""
@@ -342,7 +380,7 @@ function classNames(...classes) {
         </div>
       </div>
     </div>
-    <div className="relative isolate bg-slate-800 md:bg-slate-800 pb-32 pt-24 sm:pt-32">
+    <div className="relative isolate bg-sky-900/10 md:bg-sky-900/10 pb-32 pt-24 sm:pt-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-xl text-center">
           <h2 className="text-lg font-semibold leading-8 tracking-tight text-sky-400">Testimonials</h2>
@@ -351,8 +389,8 @@ function classNames(...classes) {
           </p>
         </div>
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
-          <figure className="relative isolate overflow-hidden col-span-2 block rounded-2xl bg-slate-400 shadow-lg ring-1 ring-gray-900/5 xl:col-start-2 xl:row-end-2">
-          <img src={blue2} alt="1" className="absolute inset-0 mix-blend-multiply -z-10 h-full w-full object-cover"
+          <figure className="relative isolate overflow-hidden col-span-2 block rounded-2xl bg-slate-500 shadow-lg ring-1 ring-gray-900/5 xl:col-start-2 xl:row-end-2">
+          <img src={barr} alt="1" className="absolute inset-0 mix-blend-multiply -z-10 h-full w-full object-cover"
             />
             <blockquote className="p-12 text-xl font-semibold leading-8 tracking-tight text-white">
               <p>{`“${featuredTestimonial.body}”`}</p>
@@ -402,7 +440,7 @@ function classNames(...classes) {
       </div>
     </div>
     
-    <div className="bg-slate-800">
+    <div className="bg-sky-900/10">
       <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:py-40 lg:px-8">
         <div className="mx-auto max-w-4xl divide-y divide-gray-100/50">
           <h1 className="text-4xl font-bold leading-10 tracking-tight text-white">Frequently asked questions</h1>
@@ -443,3 +481,4 @@ function classNames(...classes) {
     </>
     )
   }
+  
