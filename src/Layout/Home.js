@@ -20,7 +20,7 @@ import accent from "../Componets/light pictures/accent.JPG";
 import blue2 from "../Componets/light pictures/blue2.jpg";
 import green from "../Componets/light pictures/green.PNG";
 import barr from "../Componets/light pictures/barrus.jpg"
-import christmas from "../../Componets/light pictures/white.PNG";
+import christmas from "../Componets/light pictures/white.PNG";
 import Splider from "./Pages/Splider";
 import Quote from "./Pages/Quote";
 
