@@ -20,6 +20,7 @@ import accent from "../Componets/light pictures/accent.JPG";
 import blue2 from "../Componets/light pictures/blue2.jpg";
 import green from "../Componets/light pictures/green.PNG";
 import barr from "../Componets/light pictures/barrus.jpg"
+import christmas from "../../Componets/light pictures/white.PNG"
 import Splider from "./Pages/Splider";
 import Quote from "./Pages/Quote";
 
@@ -156,7 +157,7 @@ function classNames(...classes) {
           } }>
           <SplideSlide>
             <div className="relative isolate pt-40 md:pt-20 pb-48 md:pb-42 overflow-hidden bg-slate-400 md:bg-slate-400">
-            <img src={accent} alt="1" className="absolute inset-0 mix-blend-multiply h-full w-full object-cover"
+            <img src={christmas} alt="1" className="absolute inset-0 mix-blend-multiply h-full w-full object-cover"
             />
            
             <div className="mx-auto max-w-2xl py-24 sm:py-48 lg:py-32">
